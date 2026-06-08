@@ -22,7 +22,7 @@ format_timestamp <- function(x) {
 # 1. BASE CONFIGURATION & GEOGRAPHY COORDINATES
 # =====================================================================
 
-API_KEY <- "41dd8dc4fcce362b374b9807aa39f964"
+API_KEY <- "YOUR_OPEN_WEATHER_API_KEY"
 
 ncr_cities <- data.frame(
   City = c(
