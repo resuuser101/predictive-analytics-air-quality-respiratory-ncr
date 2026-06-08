@@ -6,7 +6,7 @@ The project features a **Purely API-Based Live & Historical Monitoring Dashboard
 
 ---
 
-## 👥 Authors (Group Members)
+##  Authors (Group Members)
 * **Leader:** Olediana, John Michael M.
 * **Member:** Celso, Paula Alexandra C.
 * **Member:** Domingo, Kyle Archie R.
@@ -46,6 +46,31 @@ The application establishes automated HTTP GET requests using `httr` and `jsonli
 | :--- | :--- | :--- |
 | **Criteria Atmospheric Pollutants** | **OpenWeatherMap Air Pollution API** <br> `api.openweathermap.org/data/2.5/air_pollution` | Live & Historical JSON arrays ($PM_{2.5}$, $NO_2$, $O_3$, $AQI$) |
 | **Meteorological Matrices Profile** | **Open-Meteo Climate Archive API** <br> `archive-api.open-meteo.com/v1/archive` | Hourly scientific historical reanalysis data (Temperature, Wind Speed, Relative Humidity) |
+
+---
+
+##  How to Get Your Own OpenWeatherMap API Key
+
+The live and historical air pollution features of this dashboard require a free access token (API Key) from OpenWeatherMap. Follow these steps to get your own:
+
+1. **Create an Account:**
+   * Go to the [OpenWeatherMap Registration Page](https://home.openweathermap.org/users/sign_up).
+   * Fill out the form with your details, then create your account.
+
+2. **Verify Your Email:**
+   * Check your inbox for a confirmation email from OpenWeatherMap and click the verification link. *Note: Your API key will not activate until your email is verified.*
+
+3. **Locate Your API Key:**
+   * Log into your account on the OpenWeatherMap dashboard.
+   * Click on your username in the top-right corner and select **"My API keys"** from the dropdown menu.
+   * You will see a default key automatically generated for you. Copy this alphanumeric string.
+
+4. **Activate Your Key:**
+   * **Important:** New API keys can take anywhere from **1 to 2 hours** to be activated by OpenWeatherMap's infrastructure. If the dashboard shows a connection error initially, please allow some time for activation.
+
+5. **Use it in the Dashboard:**
+   * Run the `app.R` file in RStudio.
+   * Paste your copied token into the **"OpenWeatherMap API Key:"** box inside the dashboard's left Control Panel sidebar.
 
 ---
 
